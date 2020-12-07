@@ -1,0 +1,1578 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://mrjavadseydi.poshtiban.io/p/admin/shayan/birjand-lms/image/logos.png">
+    <link rel="stylesheet" href="http://poll.birjand.ac.ir/shayan/bootstrap-rtl.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://mrjavadseydi.poshtiban.io/p/admin/shayan/birjand-lms/js/bootstrap.min.js"></script>
+
+    <title>دانشگاه بیرجند</title>
+    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v27.0.3/dist/font-face.css" rel="stylesheet" type="text/css" />
+    <style>
+        body {
+            font-family: 'Vazir';
+            direction: rtl;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        .iconshadow {
+            color: #F6FF00;
+            box-shadow: -4px -4px 1px #0e2f80;
+            margin: 0 0 0 8px;
+        }
+        
+        a {
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: none;
+        }
+        
+        .header-sochial li {
+            color: #102770;
+        }
+        
+        .header-sochial li a {
+            color: #102770;
+            padding: 4px;
+        }
+        
+        .header-sochial #header-sochial-left li {
+            margin: 0 !important;
+        }
+        
+        #header {
+            background-color: #102770 !important;
+        }
+        
+        #header #logoItem {
+            padding: 5px 0;
+            color: white;
+            font-size: small;
+        }
+        
+        @media (max-width: 768px) {
+            #header #logoItem {
+                padding: 10px 0px;
+            }
+        }
+        
+        #header #logoItem span:last-child {
+            color: #F6FF00;
+        }
+        
+        #header button {
+            background-color: #F6FF00;
+        }
+        
+        #header hr {
+            background-color: #fff;
+            margin: 10px 0 10px 0;
+        }
+        
+        @media (max-width: 768px) {
+            #header hr {
+                display: none;
+            }
+        }
+        
+        #header .mnuebutton {
+            background-color: none;
+            cursor: pointer;
+        }
+        
+        #header .mnuebutton i {
+            margin: 5px 4vw;
+            font-size: 25px;
+        }
+        
+        @media (min-width: 768px) {
+            #header .mnuebutton {
+                display: none;
+            }
+        }
+        
+        #header #navMnue ul {
+            -webkit-transition: all 0.3s;
+            transition: all 0.3s;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            list-style: none;
+            padding: 0;
+        }
+        
+        @media (max-width: 768px) {
+            #header #navMnue ul {
+                display: block;
+                position: absolute;
+                z-index: 20;
+                background-color: #102670fb;
+                width: 70vw;
+                height: 85vh;
+                right: -90vw;
+                padding: 4vw;
+            }
+        }
+        
+        #header #navMnue ul li {
+            color: #fff;
+            font-size: small;
+            margin: 0 10px 15px 10px;
+            position: relative;
+        }
+        
+        #header #navMnue ul li:hover .contentmnuesmall {
+            display: block;
+        }
+        
+        #header #navMnue ul li a {
+            color: #fff;
+        }
+        
+        #header #navMnue ul li .contentmnuesmall {
+            display: none;
+            -webkit-animation: show 0.3s;
+            animation: show 0.3s;
+            position: absolute;
+            width: 350px;
+            background-color: #102670;
+            z-index: 10;
+        }
+        
+        #header #navMnue ul li .contentmnuesmall ul {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            margin-top: 10px;
+        }
+        
+        #header #navMnue ul li .contentmnuesmall li {
+            color: white;
+            padding: 10px;
+            margin: 0;
+        }
+        
+        #header #navMnue ul li .contentmnuesmall li:hover {
+            background-color: rgba(134, 128, 128, 0.356);
+        }
+        
+        @-webkit-keyframes show {
+            0% {
+                opacity: 0.4;
+            }
+            50% {
+                opacity: 0.7;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        
+        @keyframes show {
+            0% {
+                opacity: 0.4;
+            }
+            50% {
+                opacity: 0.7;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        
+        .slider-container {
+            max-width: 100vw;
+            position: relative;
+        }
+        
+        .slide {
+            display: none;
+        }
+        
+        .slide img {
+            height: 65vh;
+        }
+        
+        @media (max-width: 575px) {
+            .slide img {
+                height: 50vh;
+            }
+        }
+        
+        .slide .textSlide {
+            position: absolute;
+            top: 50%;
+            color: white;
+            right: 20%;
+        }
+        
+        @media (max-width: 575px) {
+            .slide .textSlide {
+                top: 30%;
+            }
+        }
+        
+        .slide .textSlide span {
+            color: #F6FF00;
+        }
+        
+        .slide .textSlide hr {
+            background-color: #F6FF00;
+            width: 100%;
+            margin: 12px 0;
+        }
+        
+        .prev {
+            position: absolute;
+            top: 50%;
+            left: 15%;
+            padding: 15px;
+            cursor: pointer;
+            z-index: 15;
+            color: #F6FF00 !important;
+        }
+        
+        @media (max-width: 575px) {
+            .prev {
+                top: 30%;
+                left: 12%;
+            }
+        }
+        
+        .next {
+            position: absolute;
+            top: 50%;
+            padding: 15px;
+            cursor: pointer;
+            right: 15%;
+            color: #F6FF00 !important;
+            z-index: 15;
+        }
+        
+        @media (max-width: 575px) {
+            .next {
+                top: 30%;
+                right: 12%;
+            }
+        }
+        
+        #shortLink {
+            position: relative;
+            bottom: 50px;
+        }
+        
+        #shortLink .card:hover {
+            background-color: #102770;
+            -webkit-transition: all 0.4s;
+            transition: all 0.4s;
+        }
+        
+        #shortLink .card:hover p,
+        #shortLink .card:hover span,
+        #shortLink .card:hover i {
+            color: white;
+        }
+        
+        #shortLink i {
+            font-size: 50px;
+            padding: 20px;
+            color: #102770;
+            -webkit-transition: all 0.3s;
+            transition: all 0.3s;
+        }
+        
+        #shortLink p {
+            padding: 15px 0 0 0;
+            font-size: 1.2rem;
+            color: #102770;
+            -webkit-transition: all 0.3s;
+            transition: all 0.3s;
+            font-weight: bold;
+        }
+        
+        #shortLink span {
+            -webkit-transition: all 0.3s;
+            transition: all 0.3s;
+            padding: 20px !important;
+            color: #111113;
+        }
+        
+        #SystemGuide .card-header {
+            background-color: #102770 !important;
+            color: white;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+        }
+        
+        #SystemGuide .card-header p {
+            padding: 10px;
+            margin: auto;
+        }
+        
+        #SystemGuide i {
+            color: #102770;
+        }
+        
+        #SystemGuide .card-body {
+            overflow-y: scroll;
+            height: 400px;
+        }
+        
+        #SystemGuide .card-body li a {
+            color: black;
+        }
+        
+        #SystemGuide .card-body li:hover {
+            background-color: #d9dbdf60;
+        }
+        
+        #SystemGuide .card-body ::-webkit-scrollbar {
+            width: 10px;
+        }
+        
+        #SystemGuide .card-body::-webkit-scrollbar {
+            width: 13px;
+            background-color: #F5F5F5;
+        }
+        
+        #SystemGuide .card-body::-webkit-scrollbar-thumb {
+            background-color: #2f6699d5;
+            height: 25px;
+        }
+        
+        #SystemGuide .card-body::-webkit-scrollbar-track {
+            -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+            background-color: #F5F5F5;
+        }
+        
+        #parallax {
+            background-image: url("https://mrjavadseydi.poshtiban.io/p/admin/shayan/birjand-lms/image/NoPath - Copy (29).png");
+            min-height: 270px;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            margin: 15px 0;
+        }
+        
+        #parallax h5 {
+            color: #F6FF00;
+            font-size: 1.3rem;
+        }
+        
+        .collapsible {
+            color: black;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: right;
+            outline: none;
+            border: 1px solid #e0dbdba9;
+            font-size: 15px;
+            background-color: white;
+        }
+        
+        .active,
+        .collapsible:hover {
+            background-color: #c4bebe;
+        }
+        
+        .active i {
+            -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+        }
+        
+        .content {
+            border: 1px solid #e0dbdba9;
+            margin: 3px 0;
+            padding: 0 18px;
+            max-height: 0;
+            overflow: hidden;
+            -webkit-transition: max-height 0.2s ease-out;
+            transition: max-height 0.2s ease-out;
+        }
+        
+        #link-left-pro img {
+            margin: 3px 0;
+        }
+        
+        #link-left-pro div {
+            overflow: hidden;
+        }
+        
+        #link-left-pro div:hover span {
+            padding: 15%;
+            background: #102670c2;
+        }
+        
+        #link-left-pro div span {
+            position: absolute;
+            bottom: 0;
+            margin: 4px auto;
+            width: 105%;
+            text-align: center;
+            background: #10267093;
+            color: white;
+            padding: 5px;
+            -webkit-transition: all 0.3s;
+            transition: all 0.3s;
+        }
+        
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+        }
+        
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            cursor: pointer;
+        }
+        
+        .mySlide .card {
+            border: none !important;
+            padding: 15px;
+        }
+        
+        .mySlide .card .logosection {
+            background-color: #102770;
+            border-radius: 10px;
+            -webkit-transform: rotate(25deg);
+            transform: rotate(25deg);
+            -webkit-transition: all 0.2s;
+            transition: all 0.2s;
+        }
+        
+        .mySlide .card .logosection img {
+            padding: 5px;
+        }
+        
+        .mySlide .card .logoslide span {
+            display: block;
+            margin: 25px 0 0 0;
+        }
+        
+        .mySlide span,
+        .mySlide button {
+            display: none;
+        }
+        
+        .mySlide:hover span {
+            color: white;
+        }
+        
+        .mySlide:hover .card {
+            padding: 10px;
+            background-color: #102770;
+        }
+        
+        .mySlide:hover .card .logosection {
+            -webkit-transform: rotate(0);
+            transform: rotate(0);
+            -webkit-transition: all 0.2s;
+            transition: all 0.2s;
+        }
+        
+        .mySlide:hover .card .logoslide span {
+            display: inline;
+        }
+        
+        .mySlide:hover .card .bodySlide span {
+            display: block;
+        }
+        
+        .mySlide:hover span,
+        .mySlide:hover button {
+            display: inline-block;
+            font-size: 12px;
+        }
+        
+        .notficions a {
+            color: #102770 !important;
+        }
+        
+        .notficions a .bodyNote {
+            -webkit-transition: all 0.1s;
+            transition: all 0.1s;
+        }
+        
+        .notficions a:hover .bodyNote {
+            background-color: #777f9c41;
+        }
+        
+        .notficions a:hover p {
+            color: #102770;
+        }
+        
+        .notficions img {
+            width: 40px;
+            height: 40px;
+        }
+        
+        .notficions p {
+            margin: 0 !important;
+            color: black;
+            font-weight: 500;
+            -webkit-transition: all 0.2s;
+            transition: all 0.2s;
+        }
+        
+        .listFooter li {
+            padding: 5px 0;
+        }
+        
+        .listFooter li a {
+            color: black;
+        }
+        
+        .listFooter li a:hover {
+            color: #102770;
+        }
+        
+        .llll {
+            background-color: #102770;
+        }
+        
+        .llll .container {
+            padding: 30px 0;
+        }
+        
+        .footer-copyright {
+            background-color: #102770;
+        }
+        
+        #nnnn .row {
+            background-color: #102770;
+            width: 100%;
+            -webkit-transform: rotate(1deg);
+            transform: rotate(1deg);
+            position: relative;
+            top: 25px;
+            height: 29px !important;
+            z-index: -1;
+        }
+        
+        @media (min-width: 576px) {
+            .container {
+                max-width: 650px;
+            }
+        }
+        
+        @media (min-width: 768px) {
+            .container {
+                max-width: 720px;
+            }
+        }
+        
+        @media (min-width: 992px) {
+            .container {
+                max-width: 960px;
+            }
+        }
+        
+        @media (min-width: 1200px) {
+            .container {
+                max-width: 1140px;
+            }
+        }
+    </style>
+
+</head>
+
+<body class="">
+    <div class="container-fluid m-0 p-0">
+
+        <header id="header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="d-flex" id="logoItem">
+                            <a href="" id="logoItem" class=" d-flex">
+                                <img src="https://mrjavadseydi.poshtiban.io/p/admin/shayan/birjand-lmshttps://mrjavadseydi.poshtiban.io/p/admin/shayan/birjand-lms/image/logos.png" alt="">
+                                <div class="d-flex flex-column justify-content-end">
+                                    <span>دانشگاه بیرجند</span>
+                                    <span>UNIVERCITY OF BIRJAND</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-6 text-left  ">
+                        <div class="d-flex flex-column align-items-end mt-4 ">
+                            <button class="btn  " src=""><a href="https://lms.birjand.ac.ir/login/index.php" class=" text-dark">
+                                ورود به سامانه
+                            </a> </button>
+
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <a class="mnuebutton" onclick="showmnue()"><i class="fas fa-bars text-white"></i>   </a>
+
+                <nav id="navMnue">
+
+                    <ul class=" m-0" id="mnueList">
+                        <li class=""><a href="">
+                            صفحه اصلی
+                        </a>
+
+                        </li>
+                        <li class="mnuesmall">
+                            <span><a href="#SystemGuide">
+                                راهنمای سامانه
+                            </a></span>
+                            <div class="contentmnuesmall">
+                                <ul class="">
+                                    <li><a href="#SystemGuide">
+                                        راهنمای ویدئوی کار با سامانه ویژه اساتید
+                                    </a></li>
+                                    <li><a href="#SystemGuide">
+                                        راهنمای ویدئوی کار با سامانه ویژه دانشجویان
+                                    </a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="  "><a href="#software">
+                            نرم افزارهای موردنیاز
+                        </a></li>
+                        <li class="  "><a href="#questions">
+                            سوالات متداول
+                        </a></li>
+                        <li class=" "><a href="aboutus.html">
+                            درباره ما
+                        </a></li>
+                        <li class="  "><a href="guide.html">
+                            تماس با پشتیبانی
+                        </a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <!--slider top  -->
+        <div class="slider-container">
+            <div class="slide ">
+                <div class="position-relative">
+                    <img src="https://mrjavadseydi.poshtiban.io/p/admin/shayan/birjand-lmshttps://mrjavadseydi.poshtiban.io/p/admin/shayan/birjand-lms/image/sliderbac.png" alt="" class="w-100">
+                    <div class="textSlide d-flex flex-column">
+                        <p class=" ">مرکز آموزش مجازی <span>دانشگاه بیرجند</span></p>
+                        <hr>
+                        <small>با بیش از 12 سال سابقه کار</small>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+            <div class="slide ">
+                <div class="position-relative">
+                    <img src="https://mrjavadseydi.poshtiban.io/p/admin/shayan/birjand-lmshttps://mrjavadseydi.poshtiban.io/p/admin/shayan/birjand-lms/image/sliderbac.png" alt="" class="w-100">
+                    <div class="textSlide d-flex flex-column">
+                        <p class=" ">مرکز آموزش مجازی <span>دانشگاه بیرجند</span></p>
+                        <hr>
+                        <small>lllllllllllll</small>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+            <div class="slide ">
+                <div class="position-relative">
+                    <img src="https://mrjavadseydi.poshtiban.io/p/admin/shayan/birjand-lmshttps://mrjavadseydi.poshtiban.io/p/admin/shayan/birjand-lms/image/sliderbac.png" alt="" class="w-100">
+                    <div class="textSlide d-flex flex-column">
+                        <p class=" ">مرکز آموزش مجازی <span>دانشگاه بیرجند</span></p>
+                        <hr>
+                        <small>lllllllllllll</small>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+            <div class="slide ">
+                <div class="position-relative">
+                    <img src="https://mrjavadseydi.poshtiban.io/p/admin/shayan/birjand-lmshttps://mrjavadseydi.poshtiban.io/p/admin/shayan/birjand-lms/image/sliderbac.png" alt="" class="w-100">
+                    <div class="textSlide d-flex flex-column">
+                        <p class=" ">مرکز آموزش مجازی <span>دانشگاه بیرجند</span></p>
+                        <hr>
+                        <small>lllllllllllll</small>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">❯</a>
+            <a class="next" onclick="plusSlides(1)">❮</a>
+        </div>
+        <!--slider top  -->
+
+        <div class="container">
+            <div class="row row-cols-2 row-cols-md-4" id="shortLink">
+                <div class="col p-1  p-md-3">
+                    <a href="#software">
+                        <div class="card d-flex align-items-center flex-column">
+                            <i class="fas fa-cloud-download-alt"></i>
+                            <p>دانلود نرم افزار</p>
+                            <span class=" w-100 px-2 ">سوالات متداول دانشجویان و اساتید در زمینه سامانه اموزش الکترونیک </span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col p-1  p-md-3">
+                    <a href="#questions">
+                        <div class="card d-flex align-items-center flex-column">
+                            <i class="fas fa-question-circle"></i>
+                            <p>سوالات متداول</p>
+                            <span class=" w-100 px-2 ">سوالات متداول دانشجویان و اساتید در زمینه سامانه اموزش الکترونیک </span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col p-1  p-md-3">
+                    <a href="#SystemGuide">
+                        <div class="card d-flex align-items-center flex-column">
+                            <i class="fas fa-tv"></i>
+                            <p>راهنمای کار با سامانه </p>
+                            <span class=" w-100 px-2">سوالات متداول دانشجویان و اساتید در زمینه سامانه اموزش الکترونیک </span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col p-1 p-md-3">
+                    <a href="guide.html">
+                        <div class="card d-flex align-items-center flex-column">
+                            <i class="fas fa-headset"></i>
+                            <p class="">تماس با پشتیبانی</p>
+                            <span class=" w-100 px-2">سوالات متداول دانشجویان و اساتید در زمینه سامانه اموزش الکترونیک </span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+        <div class="container">
+            <div class="row">
+                <p id=""><i class="fas fa-square iconshadow"></i>راهنمای سامانه</p>
+            </div>
+            <div class="row row-cols-1 row-cols-md-2" id="SystemGuide">
+                <div class="col">
+                    <div class="card">
+                        <div class="card-header">
+                            <p>راهنمای ویدئوی کار با سامانه ویژه اساتید</p>
+                            <img src="https://mrjavadseydi.poshtiban.io/p/admin/shayan/birjand-lmshttps://mrjavadseydi.poshtiban.io/p/admin/shayan/birjand-lms/image" alt="">
+                        </div>
+                        <div class="card-body">
+                            <ul class=" list-unstyled">
+
+                                <li class=" py-1">
+                                    <a href="">
+                                        <i class="fas fa-download"></i> دانلود راهنمای تعریف تمرین و مشاهده پاسخ ها و نمره دهی
+                                    </a>
+                                </li>
+                                <li class=" py-1">
+                                    <a href="">
+                                        <i class="fas fa-download"></i> دانلود راهنمای تعریف تمرین و مشاهده پاسخ ها و نمره دهی
+                                    </a>
+                                </li>
+                                <li class=" py-1">
+                                    <a href="">
+                                        <i class="fas fa-download"></i> دانلود راهنمای تعریف تمرین و مشاهده پاسخ ها و نمره دهی
+                                    </a>
+                                </li>
+                                <li class=" py-1">
+                                    <a href="">
+                                        <i class="fas fa-download"></i> دانلود راهنمای تعریف تمرین و مشاهده پاسخ ها و نمره دهی
+                                    </a>
+                                </li>
+                                <li class=" py-1">
+                                    <a href="">
+                                        <i class="fas fa-download"></i> دانلود راهنمای تعریف تمرین و مشاهده پاسخ ها و نمره دهی
+                                    </a>
+                                </li>
+                                <li class=" py-1">
+                                    <a href="">
+                                        <i class="fas fa-download"></i> دانلود راهنمای تعریف تمرین و مشاهده پاسخ ها و نمره دهی
+                                    </a>
+                                </li>
+                                <li class=" py-1">
+                                    <a href="">
+                                        <i class="fas fa-download"></i> دانلود راهنمای تعریف تمرین و مشاهده پاسخ ها و نمره دهی
+                                    </a>
+                                </li>
+                                <li class=" py-1">
+                                    <a href="">
+                                        <i class="fas fa-download"></i> دانلود راهنمای تعریف تمرین و مشاهده پاسخ ها و نمره دهی
+                                    </a>
+                                </li>
+                                <li class=" py-1">
+                                    <a href="">
+                                        <i class="fas fa-download"></i> دانلود راهنمای تعریف تمرین و مشاهده پاسخ ها و نمره دهی
+                                    </a>
+                                </li>
+                                <li class=" py-1">
+                                    <a href="">
+                                        <i class="fas fa-download"></i> دانلود راهنمای تعریف تمرین و مشاهده پاسخ ها و نمره دهی
+                                    </a>
+                                </li>
+                                <li class=" py-1">
+                                    <a href="">
+                                        <i class="fas fa-download"></i> دانلود راهنمای تعریف تمرین و مشاهده پاسخ ها و نمره دهی
+                                    </a>
+                                </li>
+                                <li class=" py-1">
+                                    <a href="">
+                                        <i class="fas fa-download"></i> دانلود راهنمای تعریف تمرین و مشاهده پاسخ ها و نمره دهی
+                                    </a>
+                                </li>
+
+
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="card-header">
+                            <p>راهنمای ویدئوی کار با سامانه ویژه دانشجویان</p>
+                        </div>
+                        <div class="card-body">
+                            <ul class=" list-unstyled">
+
+                                <li class=" py-1">
+                                    <a href="">
+                                        <i class="fas fa-download"></i> دانلود راهنمای استفاده از سیستم آموزشی
+                                    </a>
+                                </li>
+                                <li class=" py-1">
+                                    <a href="">
+                                        <i class="fas fa-download"></i> دانلود راهنمای تعریف تمرین و مشاهده پاسخ ها و نمره دهی
+                                    </a>
+                                </li>
+                                <li class=" py-1">
+                                    <a href="">
+                                        <i class="fas fa-download"></i> دانلود راهنمای تعریف تمرین و مشاهده پاسخ ها و نمره دهی
+                                    </a>
+                                </li>
+                                <li class=" py-1">
+                                    <a href="">
+                                        <i class="fas fa-download"></i> دانلود راهنمای تعریف تمرین و مشاهده پاسخ ها و نمره دهی
+                                    </a>
+                                </li>
+                                <li class=" py-1">
+                                    <a href="">
+                                        <i class="fas fa-download"></i> دانلود راهنمای تعریف تمرین و مشاهده پاسخ ها و نمره دهی
+                                    </a>
+                                </li>
+                                <li class=" py-1">
+                                    <a href="">
+                                        <i class="fas fa-download"></i> v دانلود راهنمای تعریف تمرین و مشاهده پاسخ ها و نمره دهی
+                                    </a>
+                                </li>
+                                <li class=" py-1">
+                                    <a href="">
+                                        <i class="fas fa-download"></i> دانلود راهنمای تعریف تمرین و مشاهده پاسخ ها و نمره دهی
+                                    </a>
+                                </li>
+                                <li class=" py-1">
+                                    <a href="">
+                                        <i class="fas fa-download"></i> دانلود راهنمای تعریف تمرین و مشاهده پاسخ ها و نمره دهی
+                                    </a>
+                                </li>
+                                <li class=" py-1">
+                                    <a href="">
+                                        <i class="fas fa-download"></i> دانلود راهنمای تعریف تمرین و مشاهده پاسخ ها و نمره دهی
+                                    </a>
+                                </li>
+                                <li class=" py-1">
+                                    <a href="">
+                                        <i class="fas fa-download"></i> دانلود راهنمای تعریف تمرین و مشاهده پاسخ ها و نمره دهی
+                                    </a>
+                                </li>
+                                <li class=" py-1">
+                                    <a href="">
+                                        <i class="fas fa-download"></i> دانلود راهنمای تعریف تمرین و مشاهده پاسخ ها و نمره دهی
+                                    </a>
+                                </li>
+                                <li class=" py-1">
+                                    <a href="">
+                                        <i class="fas fa-download"></i> دانلود راهنمای تعریف تمرین و مشاهده پاسخ ها و نمره دهی
+                                    </a>
+                                </li>
+
+
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="parallax">
+            <h5 class=" m-auto">فرصت‌ها اتفاق نمی‌افتند، شما خالق آنها هستید</h5>
+        </div>
+        <div class="p-3" id="questions"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-9 d-flex">
+                    <div class=" col">
+                        <p> <i class="fas fa-square iconshadow"></i> سوالات متداول</p>
+                    </div>
+                    <div class=" col text-left">
+                        <p><a href="" class=" text-dark">
+                            مشاهده همه
+                        </a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col-12 col-md-9">
+                    <button class="collapsible">
+                        چگونه اکانت ورود به سامانه کلاس‌های مجازی دانشگاه  را دریافت کنم؟                          <i class="fas fa-angle-down float-left"></i>
+                    </button>
+                    <div class="content">
+                        <p class=" text-justify">در دریافت اکانت به مشکل برخوردم (کد دانشجویی تکراری، اطلاعات تکمیل نیست و ...)؟ لطفا فایل راهنمای FAQ_ITSRegister را مطالعه فرمایید. در دریافت اکانت به مشکل برخوردم (کد دانشجویی تکراری، اطلاعات تکمیل نیست و ...)؟ لطفا فایل راهنمای
+                            FAQ_ITSRegister را مطالعه فرمایید.
+                        </p>
+
+                    </div>
+
+                    <button class="collapsible">من در مورد ورود به سامانه به مشکل برخوردم، چگونه می‌توانم با شما تماس بگیرم؟
+                        <i class="fas fa-angle-down float-left"></i>
+
+                    </button>
+                    <div class="content">
+                        <p class=" text-justify">در دریافت اکانت به مشکل برخوردم (کد دانشجویی تکراری، اطلاعات تکمیل نیست و ...)؟ لطفا فایل راهنمای FAQ_ITSRegister را مطالعه فرمایید. در دریافت اکانت به مشکل برخوردم (کد دانشجویی تکراری، اطلاعات تکمیل نیست و ...)؟ لطفا فایل راهنمای
+                            FAQ_ITSRegister را مطالعه فرمایید.
+                        </p>
+
+                    </div>
+                    <button class="collapsible">راهنمای ویژه اساتید
+                        <i class="fas fa-angle-down float-left"></i>
+
+                    </button>
+                    <div class="content">
+                        <p class=" text-justify">در دریافت اکانت به مشکل برخوردم (کد دانشجویی تکراری، اطلاعات تکمیل نیست و ...)؟ لطفا فایل راهنمای FAQ_ITSRegister را مطالعه فرمایید. در دریافت اکانت به مشکل برخوردم (کد دانشجویی تکراری، اطلاعات تکمیل نیست و ...)؟ لطفا فایل راهنمای
+                            FAQ_ITSRegister را مطالعه فرمایید.
+                        </p>
+
+                    </div>
+                    <button class="collapsible">
+                         <span>راهنمای ویژه دانشجویان</span>
+                         <i class="fas fa-angle-down float-left"></i>
+                    
+                    </button>
+                    <div class="content">
+                        <p class=" text-justify">در دریافت اکانت به مشکل برخوردم (کد دانشجویی تکراری، اطلاعات تکمیل نیست و ...)؟ لطفا فایل راهنمای FAQ_ITSRegister را مطالعه فرمایید. در دریافت اکانت به مشکل برخوردم (کد دانشجویی تکراری، اطلاعات تکمیل نیست و ...)؟ لطفا فایل راهنمای
+                            FAQ_ITSRegister را مطالعه فرمایید.
+                        </p>
+
+                    </div>
+                    <button class="collapsible">راهنمای ویژه دانشجویان 
+                        <i class="fas fa-angle-down float-left"></i>
+
+                    </button>
+                    <div class="content">
+                        <p class=" text-justify">در دریافت اکانت به مشکل برخوردم (کد دانشجویی تکراری، اطلاعات تکمیل نیست و ...)؟ لطفا فایل راهنمای FAQ_ITSRegister را مطالعه فرمایید. در دریافت اکانت به مشکل برخوردم (کد دانشجویی تکراری، اطلاعات تکمیل نیست و ...)؟ لطفا فایل راهنمای
+                            FAQ_ITSRegister را مطالعه فرمایید.
+                        </p>
+
+                    </div> <button class="collapsible">راهنمای ویژه دانشجویان 
+                        <i class="fas fa-angle-down float-left"></i>
+
+                    </button>
+                    <div class="content">
+                        <p class=" text-justify">در دریافت اکانت به مشکل برخوردم (کد دانشجویی تکراری، اطلاعات تکمیل نیست و ...)؟ لطفا فایل راهنمای FAQ_ITSRegister را مطالعه فرمایید. در دریافت اکانت به مشکل برخوردم (کد دانشجویی تکراری، اطلاعات تکمیل نیست و ...)؟ لطفا فایل راهنمای
+                            FAQ_ITSRegister را مطالعه فرمایید.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3" id="link-left-pro">
+                    <div class="w-100 position-relative">
+                        <a href="">
+                            <img src="https://mrjavadseydi.poshtiban.io/p/admin/shayan/birjand-lms/https://mrjavadseydi.poshtiban.io/p/admin/shayan/birjand-lms/image/1.png" alt="..." class="w-100">
+                            <div class="d-flex flex-column align-items-center">
+                                <span>تماس با پشتیبانی</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="w-100  position-relative">
+                        <a href="">
+                            <img src="https://mrjavadseydi.poshtiban.io/p/admin/shayan/birjand-lms/https://mrjavadseydi.poshtiban.io/p/admin/shayan/birjand-lms/image/3.png" alt="..." class="w-100">
+                            <div class="d-flex flex-column align-items-center">
+                                <span>طبقه های درسی</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="w-100 position-relative">
+                        <a href="">
+                            <img src="https://mrjavadseydi.poshtiban.io/p/admin/shayan/birjand-lms/https://mrjavadseydi.poshtiban.io/p/admin/shayan/birjand-lms/image/3.png" alt="..." class="w-100">
+                            <div class="d-flex flex-column align-items-center">
+                                <span>دانلود فایل های مورد نیاز</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="w-100 position-relative">
+                        <a href="">
+                            <img src="https://mrjavadseydi.poshtiban.io/p/admin/shayan/birjand-lms/https://mrjavadseydi.poshtiban.io/p/admin/shayan/birjand-lms/image/4.png" alt="..." class="w-100">
+                            <div class="d-flex flex-column align-items-center">
+                                <span>کتابخانه مجازی</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="w-100 position-relative">
+                        <a href="">
+                            <img src="https://mrjavadseydi.poshtiban.io/p/admin/shayan/birjand-lms/https://mrjavadseydi.poshtiban.io/p/admin/shayan/birjand-lms/image/5.png" alt="..." class="w-100">
+                            <div class="d-flex flex-column align-items-center">
+                                <span>درخواست درس جدید</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class=" p-3" id="software"></div>
+        <div class="container">
+            <div class="row mt-3 mt-sm-0">
+                <div class="col">
+                    <p><i class="fas fa-square iconshadow"></i>نرم افزارهای مورد نیاز </p>
+                </div>
+            </div>
+            <div class="row my-5">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide mySlide">
+                            <div class="card ">
+                                <div class="logoslide ">
+                                    <div class="logosection"><img src="https://mrjavadseydi.poshtiban.io/p/admin/shayan/birjand-lmshttps://mrjavadseydi.poshtiban.io/p/admin/shayan/birjand-lms/image/vlc.png" alt=""></div><span>vls player</span>
+                                </div>
+                                <div class="bodySlide">
+                                    <span>سیستم عامل: ویندوز</span>
+                                    <span>نوع: نرم افزار جانبی</span>
+                                </div>
+                                <div class="buttonSlide">
+                                    <button class="btn btn-success">دانلود نرم افزار</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide mySlide">
+                            <div class="card ">
+                                <div class="logoslide ">
+                                    <div class="logosection"><img src="https://mrjavadseydi.poshtiban.io/p/admin/shayan/birjand-lmshttps://mrjavadseydi.poshtiban.io/p/admin/shayan/birjand-lms/image/mx].png" alt=""></div><span>mx player</span>
+                                </div>
+                                <div class="bodySlide">
+                                    <span>سیستم عامل: ویندوز</span>
+                                    <span>نوع: نرم افزار جانبی</span>
+                                </div>
+                                <div class="buttonSlide">
+                                    <button class="btn btn-success">دانلود نرم افزار</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide mySlide">
+                            <div class="card ">
+                                <div class="logoslide ">
+                                    <div class="logosection"><img src="https://mrjavadseydi.poshtiban.io/p/admin/shayan/birjand-lmshttps://mrjavadseydi.poshtiban.io/p/admin/shayan/birjand-lms/image/adobe.png" alt=""></div><span>adobe conect </span>
+                                </div>
+                                <div class="bodySlide">
+                                    <span>سیستم عامل: ویندوز</span>
+                                    <span>نوع: نرم افزار جانبی</span>
+                                </div>
+                                <div class="buttonSlide">
+                                    <button class="btn btn-success">دانلود نرم افزار</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide mySlide">
+                            <div class="card ">
+                                <div class="logoslide ">
+                                    <div class="logosection"><img src="https://mrjavadseydi.poshtiban.io/p/admin/shayan/birjand-lmshttps://mrjavadseydi.poshtiban.io/p/admin/shayan/birjand-lms/image/any desk.png" alt=""></div><span>any desk </span>
+                                </div>
+                                <div class="bodySlide">
+                                    <span>سیستم عامل: ویندوز</span>
+                                    <span>نوع: نرم افزار جانبی</span>
+                                </div>
+                                <div class="buttonSlide">
+                                    <button class="btn btn-success">دانلود نرم افزار</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide mySlide">
+                            <div class="card ">
+                                <div class="logoslide ">
+                                    <div class="logosection"><img src="https://mrjavadseydi.poshtiban.io/p/admin/shayan/birjand-lmshttps://mrjavadseydi.poshtiban.io/p/admin/shayan/birjand-lms/image/key.png" alt=""></div><span>key farsi </span>
+                                </div>
+                                <div class="bodySlide">
+                                    <span>سیستم عامل: ویندوز</span>
+                                    <span>نوع: نرم افزار جانبی</span>
+                                </div>
+                                <div class="buttonSlide">
+                                    <button class="btn btn-success">دانلود نرم افزار</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide mySlide">
+                            <div class="card ">
+                                <div class="logoslide ">
+                                    <div class="logosection"><img src="https://mrjavadseydi.poshtiban.io/p/admin/shayan/birjand-lmshttps://mrjavadseydi.poshtiban.io/p/admin/shayan/birjand-lms/image/vlc.png" alt=""></div><span>vls player</span>
+                                </div>
+                                <div class="bodySlide">
+                                    <span>سیستم عامل: ویندوز</span>
+                                    <span>نوع: نرم افزار جانبی</span>
+                                </div>
+                                <div class="buttonSlide">
+                                    <button class="btn btn-success">دانلود نرم افزار</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide mySlide">
+                            <div class="card ">
+                                <div class="logoslide ">
+                                    <div class="logosection"><img src="https://mrjavadseydi.poshtiban.io/p/admin/shayan/birjand-lmshttps://mrjavadseydi.poshtiban.io/p/admin/shayan/birjand-lms/image/vlc.png" alt=""></div><span>vls player</span>
+                                </div>
+                                <div class="bodySlide">
+                                    <span>سیستم عامل: ویندوز</span>
+                                    <span>نوع: نرم افزار جانبی</span>
+                                </div>
+                                <div class="buttonSlide">
+                                    <button class="btn btn-success">دانلود نرم افزار</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide mySlide">
+                            <div class="card ">
+                                <div class="logoslide ">
+                                    <div class="logosection"><img src="https://mrjavadseydi.poshtiban.io/p/admin/shayan/birjand-lmshttps://mrjavadseydi.poshtiban.io/p/admin/shayan/birjand-lms/image/vlc.png" alt=""></div><span>vls player</span>
+                                </div>
+                                <div class="bodySlide">
+                                    <span>سیستم عامل: ویندوز</span>
+                                    <span>نوع: نرم افزار جانبی</span>
+                                </div>
+                                <div class="buttonSlide">
+                                    <button class="btn btn-success">دانلود نرم افزار</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide mySlide">
+                            <div class="card ">
+                                <div class="logoslide ">
+                                    <div class="logosection"><img src="https://mrjavadseydi.poshtiban.io/p/admin/shayan/birjand-lmshttps://mrjavadseydi.poshtiban.io/p/admin/shayan/birjand-lms/image/Group 1319.png" alt=""></div><span>vls player</span>
+                                </div>
+                                <div class="bodySlide">
+                                    <span>سیستم عامل: ویندوز</span>
+                                    <span>نوع: نرم افزار جانبی</span>
+                                </div>
+                                <div class="buttonSlide">
+                                    <button class="btn btn-success">دانلود نرم افزار</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide mySlide">
+                            <div class="card ">
+                                <div class="logoslide ">
+                                    <div class="logosection"><img src="https://mrjavadseydi.poshtiban.io/p/admin/shayan/birjand-lmshttps://mrjavadseydi.poshtiban.io/p/admin/shayan/birjand-lms/image/vlc.png" alt=""></div><span>vls player</span>
+                                </div>
+                                <div class="bodySlide">
+                                    <span>سیستم عامل: ویندوز</span>
+                                    <span>نوع: نرم افزار جانبی</span>
+                                </div>
+                                <div class="buttonSlide">
+                                    <button class="btn btn-success">دانلود نرم افزار</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- Add Pagination -->
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+        </div>
+        <div class="container my-5">
+            <div class="row my-4">
+                <div class="col">
+                    <p><i class="fas fa-square iconshadow"></i>اعلانات </p>
+                </div>
+            </div>
+            <div class="row row-cols-1 row-cols-md-2">
+                <div class="col notficions">
+                    <a href="">
+                        <div class=" d-flex bodyNote p-1 my-1">
+                            <img src="https://mrjavadseydi.poshtiban.io/p/admin/shayan/birjand-lmshttps://mrjavadseydi.poshtiban.io/p/admin/shayan/birjand-lms/image/Mask Group 14.png" alt="">
+                            <div class="w-100 d-flex flex-column  px-2 ">
+                                <div class="d-flex w-100 ">
+                                    <div class="col ">
+                                        <small>مدیر سیستم</small>
+                                    </div>
+                                    <div class=" text-left p-0">
+                                        <span><i class="far fa-comment"></i>18</span>
+                                        <span>1398/11/15</span>
+                                        <span><i class="far fa-calendar-alt"></i></span>
+                                    </div>
+                                </div>
+                                <div class=" px-2">
+                                    <p> نشست شرکت استودر با شرکت فاران شرکت استودر با شرکت فاران شرکت استودر با شرکت فاران در ساختمان فاران</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class=" d-flex bodyNote p-1 my-1">
+                            <img src="https://mrjavadseydi.poshtiban.io/p/admin/shayan/birjand-lmshttps://mrjavadseydi.poshtiban.io/p/admin/shayan/birjand-lms/image/Mask Group 14.png" alt="">
+                            <div class="w-100 d-flex flex-column  px-2 ">
+                                <div class="d-flex w-100 ">
+                                    <div class="col ">
+                                        <small>مدیر سیستم</small>
+                                    </div>
+                                    <div class=" text-left p-0">
+                                        <span><i class="far fa-comment"></i>18</span>
+                                        <span>1398/11/15</span>
+                                        <span><i class="far fa-calendar-alt"></i></span>
+                                    </div>
+                                </div>
+                                <div class=" px-2">
+                                    <p> نشست شرکت استودر با شرکت فاران شرکت استودر با شرکت فاران شرکت استودر با شرکت فاران در ساختمان فاران</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class=" d-flex bodyNote p-1 my-1">
+                            <img src="https://mrjavadseydi.poshtiban.io/p/admin/shayan/birjand-lmshttps://mrjavadseydi.poshtiban.io/p/admin/shayan/birjand-lms/image/Mask Group 14.png" alt="">
+                            <div class="w-100 d-flex flex-column  px-2 ">
+                                <div class="d-flex w-100 ">
+                                    <div class="col ">
+                                        <small>مدیر سیستم</small>
+                                    </div>
+                                    <div class=" text-left p-0">
+                                        <span><i class="far fa-comment"></i>18</span>
+                                        <span>1398/11/15</span>
+                                        <span><i class="far fa-calendar-alt"></i></span>
+                                    </div>
+                                </div>
+                                <div class=" px-2">
+                                    <p> نشست شرکت استودر با شرکت فاران شرکت استودر با شرکت فاران شرکت استودر با شرکت فاران در ساختمان فاران</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class=" d-flex bodyNote p-1 my-1">
+                            <img src="https://mrjavadseydi.poshtiban.io/p/admin/shayan/birjand-lmshttps://mrjavadseydi.poshtiban.io/p/admin/shayan/birjand-lms/image/Mask Group 14.png" alt="">
+                            <div class="w-100 d-flex flex-column  px-2 ">
+                                <div class="d-flex w-100 ">
+                                    <div class="col ">
+                                        <small>مدیر سیستم</small>
+                                    </div>
+                                    <div class=" text-left p-0">
+                                        <span><i class="far fa-comment"></i>18</span>
+                                        <span>1398/11/15</span>
+                                        <span><i class="far fa-calendar-alt"></i></span>
+                                    </div>
+                                </div>
+                                <div class=" px-2">
+                                    <p> نشست شرکت استودر با شرکت فاران شرکت استودر با شرکت فاران شرکت استودر با شرکت فاران در ساختمان فاران</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class=" d-flex bodyNote p-1 my-1">
+                            <img src="https://mrjavadseydi.poshtiban.io/p/admin/shayan/birjand-lmshttps://mrjavadseydi.poshtiban.io/p/admin/shayan/birjand-lms/image/Mask Group 14.png" alt="">
+                            <div class="w-100 d-flex flex-column  px-2 ">
+                                <div class="d-flex w-100 ">
+                                    <div class="col ">
+                                        <small>مدیر سیستم</small>
+                                    </div>
+                                    <div class=" text-left p-0">
+                                        <span><i class="far fa-comment"></i>18</span>
+                                        <span>1398/11/15</span>
+                                        <span><i class="far fa-calendar-alt"></i></span>
+                                    </div>
+                                </div>
+                                <div class=" px-2">
+                                    <p> نشست شرکت استودر با شرکت فاران شرکت استودر با شرکت فاران شرکت استودر با شرکت فاران در ساختمان فاران</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col notficions">
+                    <a href="">
+                        <div class=" d-flex bodyNote p-1 my-1">
+                            <img src="https://mrjavadseydi.poshtiban.io/p/admin/shayan/birjand-lmshttps://mrjavadseydi.poshtiban.io/p/admin/shayan/birjand-lms/image/Mask Group 14.png" alt="">
+                            <div class="w-100 d-flex flex-column  px-2 ">
+                                <div class="d-flex w-100 ">
+                                    <div class="col ">
+                                        <small>مدیر سیستم</small>
+                                    </div>
+                                    <div class=" text-left p-0">
+                                        <span><i class="far fa-comment"></i>18</span>
+                                        <span>1398/11/15</span>
+                                        <span><i class="far fa-calendar-alt"></i></span>
+                                    </div>
+                                </div>
+                                <div class=" px-2">
+                                    <p> نشست شرکت استودر با شرکت فاران شرکت استودر با شرکت فاران شرکت استودر با شرکت فاران در ساختمان فاران</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class=" d-flex bodyNote p-1 my-1">
+                            <img src="https://mrjavadseydi.poshtiban.io/p/admin/shayan/birjand-lmshttps://mrjavadseydi.poshtiban.io/p/admin/shayan/birjand-lms/image/Mask Group 14.png" alt="">
+                            <div class="w-100 d-flex flex-column  px-2 ">
+                                <div class="d-flex w-100 ">
+                                    <div class="col ">
+                                        <small>مدیر سیستم</small>
+                                    </div>
+                                    <div class=" text-left p-0">
+                                        <span><i class="far fa-comment"></i>18</span>
+                                        <span>1398/11/15</span>
+                                        <span><i class="far fa-calendar-alt"></i></span>
+                                    </div>
+                                </div>
+                                <div class=" px-2">
+                                    <p> نشست شرکت استودر با شرکت فاران شرکت استودر با شرکت فاران شرکت استودر با شرکت فاران در ساختمان فاران</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class=" d-flex bodyNote p-1 my-1">
+                            <img src="https://mrjavadseydi.poshtiban.io/p/admin/shayan/birjand-lmshttps://mrjavadseydi.poshtiban.io/p/admin/shayan/birjand-lms/image/Mask Group 14.png" alt="">
+                            <div class="w-100 d-flex flex-column  px-2 ">
+                                <div class="d-flex w-100 ">
+                                    <div class="col ">
+                                        <small>مدیر سیستم</small>
+                                    </div>
+                                    <div class=" text-left p-0">
+                                        <span><i class="far fa-comment"></i>18</span>
+                                        <span>1398/11/15</span>
+                                        <span><i class="far fa-calendar-alt"></i></span>
+                                    </div>
+                                </div>
+                                <div class=" px-2">
+                                    <p> نشست شرکت استودر با شرکت فاران شرکت استودر با شرکت فاران شرکت استودر با شرکت فاران در ساختمان فاران</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class=" d-flex bodyNote p-1 my-1">
+                            <img src="https://mrjavadseydi.poshtiban.io/p/admin/shayan/birjand-lmshttps://mrjavadseydi.poshtiban.io/p/admin/shayan/birjand-lms/image/Mask Group 14.png" alt="">
+                            <div class="w-100 d-flex flex-column  px-2 ">
+                                <div class="d-flex w-100 ">
+                                    <div class="col ">
+                                        <small>مدیر سیستم</small>
+                                    </div>
+                                    <div class=" text-left p-0">
+                                        <span><i class="far fa-comment"></i>18</span>
+                                        <span>1398/11/15</span>
+                                        <span><i class="far fa-calendar-alt"></i></span>
+                                    </div>
+                                </div>
+                                <div class=" px-2">
+                                    <p> نشست شرکت استودر با شرکت فاران شرکت استودر با شرکت فاران شرکت استودر با شرکت فاران در ساختمان فاران</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class=" d-flex bodyNote p-1 my-1">
+                            <img src="https://mrjavadseydi.poshtiban.io/p/admin/shayan/birjand-lmshttps://mrjavadseydi.poshtiban.io/p/admin/shayan/birjand-lms/image/Mask Group 14.png" alt="">
+                            <div class="w-100 d-flex flex-column  px-2 ">
+                                <div class="d-flex w-100 ">
+                                    <div class="col ">
+                                        <small>مدیر سیستم</small>
+                                    </div>
+                                    <div class=" text-left p-0">
+                                        <span><i class="far fa-comment"></i>18</span>
+                                        <span>1398/11/15</span>
+                                        <span><i class="far fa-calendar-alt"></i></span>
+                                    </div>
+                                </div>
+                                <div class=" px-2">
+                                    <p> نشست شرکت استودر با شرکت فاران شرکت استودر با شرکت فاران شرکت استودر با شرکت فاران در ساختمان فاران</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class=" " id="nnnn">
+                <div class="row"></div>
+            </div>
+            <div class="all-footer overflow-hidden">
+                <div class="bg-light llll">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-5 d-none d-md-inline">
+                                <p><i class="fas fa-square iconshadow"></i>اعلانات </p>
+                                <span class=""> 
+                                     دانشگاه بیرجند در راستای ورود به فضاهای نوین یاددهی- یادگیری و بهره گیری از فناوری اطلاعات و ارتباطات در نظام آموزشی خود اقدام به راه اندازی سامانه آموزش الکترونیکی کرده است. در این سامانه علاوه بر اینکه برخی از دروس به روش کاملا الکترونیکی ارائه می شوند؛ اساتید دانشگاه می توانند از قابلیت های این نوع آموزش در کنار آموزش حضوری استفاده نمایند. این سامانه در خدمت دانشکده های مختلف برای ارائه دروس و یا کنفرانس های کامپیوتری تخصصی می باشد.
+                                </span>
+                            </div>
+                            <div class="col-6 col-md-3 px-2 px-md-0">
+                                <p><i class="fas fa-square iconshadow"></i>اعلانات </p>
+                                <ul class="listFooter list-unstyled">
+                                    <li class=" ">
+                                        <a href="">
+                                            صفحه اصلی
+    
+                                        </a>
+                                    </li>
+                                    <li class="">
+                                        <a href="">
+                                            راهنمای سامانه
+    
+                                        </a>
+                                    </li>
+                                    <li class="">
+                                        <a href="">
+                                            نرم افزار های مورد نیاز
+    
+                                        </a>
+                                    </li>
+                                    <li class="">
+                                        <a href="">
+                                            سوالات متداول
+    
+                                        </a>
+                                    </li>
+                                    <li class="">
+                                        <a href="">
+                                            دوره های آموزشی
+    
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-6 col-md-4">
+                                <p><i class="fas fa-square iconshadow"></i>راه های تماس با سامانه </p>
+
+                                <ul class=" list-unstyled">
+                                    <li>
+                                        <span>
+                                            09160186390
+                                        </span><span>
+                                            09160186390
+                                        </span><span>
+                                            09160186390
+                                        </span>
+                                    </li>
+                                    <li>
+                                        ایمیل: elearning@birjand.ac.ir
+                                    </li>
+                                    <li>
+                                        دورنما <span> 3742544656234</span>
+                                    </li>
+                                    <li>
+                                        ساعات پاسخگویی: 7صبح الی 8 شب
+
+                                    </li>
+                                    <li class=" text-left mt-4">
+                                        <button class="btn btn-outline-success m-1">Android <i class="fab fa-android"></i></button>
+                                        <button class="btn btn-outline-dark m-1">App ios <i class="fab fa-apple"></i></button>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright text-right ">
+                <div class=" container ">
+                    <div class="row d-flex align-items-center">
+                        <div class="col d-flex align-items-center">
+                            <a href="" class=" text-white my-3 ">کلیه حقوق سایت متعلق مربوط به دانشگاه بیرجند می باشد   </a>
+
+                        </div>
+                        <div class="col text-left ">
+                            <a href="https://www.daneshjooyar.com/" class=" text-white my-3 ">طراحی شده توسط دانشجویار</a>
+
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+            </div>
+        </footer>
+
+    </div>
+</body>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="https://mrjavadseydi.poshtiban.io/p/admin/shayan/birjand-lms/js/custom.js"></script>
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        slidesPerView: 7,
+        spaceBetween: 30,
+
+        loop: true,
+        loopFillGroupWithBlank: true,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        breakpoints: {
+            320: {
+                slidesPerView: 3,
+                spaceBetween: 30,
+            },
+            480: {
+                slidesPerView: 4,
+                spaceBetween: 30,
+            },
+            640: {
+                slidesPerView: 5,
+                spaceBetween: 30,
+            },
+            800: {
+                slidesPerView: 7,
+                spaceBetween: 30,
+            },
+
+        }
+    });
+</script>
+
+</html>

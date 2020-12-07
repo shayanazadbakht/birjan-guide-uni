@@ -1,0 +1,672 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://mrjavadseydi.poshtiban.io/p/admin/shayan/birjand-lms/image/logos.png">
+    <link rel="stylesheet" href="http://poll.birjand.ac.ir/shayan/bootstrap-rtl.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://mrjavadseydi.poshtiban.io/p/admin/shayan/birjand-lms/js/bootstrap.min.js"></script>
+    <title>درباره ما</title>
+    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v27.0.3/dist/font-face.css" rel="stylesheet" type="text/css" />
+    <style>
+        body {
+            font-family: 'Vazir';
+            direction: rtl;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        .container,
+        .col-6,
+        col {
+            padding: 0;
+        }
+        
+        a,
+        a:hover {
+            text-decoration: none;
+        }
+        
+        .iconshadow {
+            color: #F6FF00;
+            -webkit-box-shadow: -4px -4px 1px #0e2f80;
+            box-shadow: -4px -4px 1px #0e2f80;
+            margin: 0 0 0 8px;
+        }
+        
+        @media (min-width: 576px) {
+            .container {
+                max-width: 650px;
+            }
+        }
+        
+        @media (min-width: 768px) {
+            .container {
+                max-width: 720px;
+            }
+        }
+        
+        @media (min-width: 992px) {
+            .container {
+                max-width: 960px;
+            }
+        }
+        
+        @media (min-width: 1200px) {
+            .container {
+                max-width: 1140px;
+            }
+        }
+        /*  */
+        
+        .header-sochial li {
+            color: #102770;
+        }
+        
+        .header-sochial li a {
+            color: #102770;
+            padding: 4px;
+        }
+        
+        .header-sochial #header-sochial-left li {
+            margin: 0 !important;
+        }
+        
+        #header {
+            background-color: #102770 !important;
+        }
+        
+        #header #logoItem {
+            padding: 5px 0;
+            color: white;
+            font-size: small;
+        }
+        
+        @media (max-width: 768px) {
+            #header #logoItem {
+                padding: 10px 10px;
+            }
+        }
+        
+        #header #logoItem span:last-child {
+            color: #F6FF00;
+        }
+        
+        #header button {
+            background-color: #F6FF00;
+            margin: 0 10px;
+        }
+        
+        #header hr {
+            background-color: #fff;
+            margin: 10px 0 10px 0;
+        }
+        
+        @media (max-width: 768px) {
+            #header hr {
+                display: none;
+            }
+        }
+        
+        #header .mnuebutton {
+            background-color: none;
+            cursor: pointer;
+        }
+        
+        #header .mnuebutton i {
+            margin: 5px 4vw;
+            font-size: 25px;
+        }
+        
+        @media (min-width: 768px) {
+            #header .mnuebutton {
+                display: none;
+            }
+        }
+        
+        #header #navMnue ul {
+            -webkit-transition: all 0.3s;
+            transition: all 0.3s;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            list-style: none;
+            padding: 0;
+        }
+        
+        @media (max-width: 768px) {
+            #header #navMnue ul {
+                display: block;
+                position: absolute;
+                z-index: 20;
+                background-color: #102670f5;
+                width: 70vw;
+                height: 85vh;
+                right: -90vw;
+                padding: 4vw;
+            }
+        }
+        
+        #header #navMnue ul li {
+            color: #fff;
+            font-size: small;
+            margin: 0 10px 15px 10px;
+            position: relative;
+        }
+        
+        #header #navMnue ul li:hover .contentmnuesmall {
+            display: block;
+        }
+        
+        #header #navMnue ul li a {
+            color: #fff;
+        }
+        
+        #header #navMnue ul li .contentmnuesmall {
+            display: none;
+            -webkit-animation: show 0.3s;
+            animation: show 0.3s;
+            position: absolute;
+            width: 350px;
+            background-color: #102770;
+            z-index: 10;
+        }
+        
+        #header #navMnue ul li .contentmnuesmall ul {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            margin-top: 10px;
+        }
+        
+        #header #navMnue ul li .contentmnuesmall li {
+            color: white;
+            padding: 10px;
+            margin: 0;
+        }
+        
+        #header #navMnue ul li .contentmnuesmall li:hover {
+            background-color: rgba(134, 128, 128, 0.356);
+        }
+        
+        @-webkit-keyframes show {
+            0% {
+                opacity: 0.4;
+            }
+            50% {
+                opacity: 0.7;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        
+        @keyframes show {
+            0% {
+                opacity: 0.4;
+            }
+            50% {
+                opacity: 0.7;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        /*  */
+        
+        .location {
+            margin: 10px 10px 0 0;
+        }
+        
+        .location a {
+            color: #10267093;
+        }
+        
+        .location a:last-child {
+            color: black;
+        }
+        
+        .baccolorequa {
+            background-color: #ECF6FC;
+        }
+        
+        .tabelguide tr td {
+            padding: 10px 0;
+        }
+        
+        @media (max-width: 480px) {
+            .tabelguide tr td {
+                font-size: 0.8rem;
+            }
+        }
+        
+        .listFooter li {
+            padding: 5px 0;
+        }
+        
+        .listFooter li a {
+            color: black;
+        }
+        
+        .listFooter li a:hover {
+            color: #102770;
+        }
+        
+        .llll {
+            background-color: #102770;
+        }
+        
+        .llll .container {
+            padding: 30px 0;
+        }
+        
+        .footer-copyright {
+            background-color: #102770;
+        }
+        
+        #nnnn .row {
+            background-color: #102770;
+            width: 100%;
+            -webkit-transform: rotate(1deg);
+            transform: rotate(1deg);
+            position: relative;
+            top: 25px;
+            height: 29px !important;
+            z-index: -1;
+        }
+    </style>
+
+</head>
+
+<body class="">
+    <div class="container-fluid m-0 p-0">
+
+        <header id="header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="d-flex" id="logoItem">
+                            <a href="" id="logoItem" class=" d-flex">
+                                <img src="https://mrjavadseydi.poshtiban.io/p/admin/shayan/birjand-lms/image/logos.png" alt="">
+                                <div class="d-flex flex-column justify-content-end">
+                                    <span>دانشگاه بیرجند</span>
+                                    <span>UNIVERCITY OF BIRJAND</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-6 text-left  ">
+                        <div class="d-flex flex-column align-items-end mt-4 ">
+                            <button class="btn  " src=""><a href="https://lms.birjand.ac.ir/login/index.php" class=" text-dark">
+                                ورود به سامانه
+                            </a> </button>
+
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <a class="mnuebutton" onclick="showmnue()"><i class="fas fa-bars text-white"></i>   </a>
+
+                <nav id="navMnue">
+
+                    <ul class=" m-0" id="mnueList">
+                        <li class="">
+                            <a href="index.html">
+                                <a href="">
+                                صفحه اصلی
+                            </a>
+                            </a>
+
+                        </li>
+                        <li class="mnuesmall">
+                            <span><a href="">
+                                راهنمای سامانه
+                            </a></span>
+                            <div class="contentmnuesmall">
+                                <ul class="">
+                                    <li><a href="index.html#SystemGuide">
+                                        راهنمای ویدئوی کار با سامانه ویژه اساتید
+                                    </a></li>
+                                    <li><a href="index.html#SystemGuide">
+                                        راهنمای ویدئوی کار با سامانه ویژه دانشجویان
+                                    </a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="  "><a href="index.html#software">
+                            نرم افزارهای موردنیاز
+                        </a></li>
+                        <li class="  "><a href="index.html#questions">
+                            سوالات متداول
+                        </a></li>
+                        <li class=" "><a href="aboutus.html">
+                            درباره ما
+                        </a></li>
+                        <li class="  "><a href="#suport">
+                            تماس با پشتیبانی
+                        </a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <!--  -->
+        <div class="container">
+            <div class="row">
+                <div class="location">
+                    <span><a href="">
+                        صفحه اصلی 
+                    </a></span>
+                    <span>
+                        /
+                    </span>
+                    <span> <a href="">
+                        درباره ما
+                    </a> </span>
+                </div>
+            </div>
+            <div class="row  m-4  my-5 d-flex flex-column">
+
+                <p id=""><i class="fas fa-square iconshadow"></i>درباره ما</p>
+
+                <div class="alert alert-success">
+                    <span class=" text-justify">توجه : در صورت وجود مشکل برای ورود به حساب کاربری خود ، رمز عبور سامانه پویا خود را تغییر دهید و با رمز عبور جدید وارد<a href="https://lms.birjand.ac.ir/login/index.php"> حساب کاربری</a> خود در این سامانه شوید </span>
+                </div>
+                <span>
+                    در صورت هر گونه سوال از طریق یکی از راه های زیر پرسش خود را مطرح نمایید
+                </span>
+                <div class="d-flex my-2 baccolorequa p-2">
+                    <img src="https://mrjavadseydi.poshtiban.io/p/admin/shayan/birjand-lms/image/online-learning.png" alt="online" class="p-2 border-left m-auto">
+                    <div class="d-flex flex-column  w-100 p-2">
+                        <span class=" text-justify">
+                            آیا قبل طرح سوالتان ویدئوهای آموزشی مربوط به اساتید و دانشجویان را دیده اید؟
+
+                        </span>
+                        <span>
+                            مشاهده ویدئوهای آموزشی <a href="">
+                                دانشجویان
+                            </a> و <a href="">
+                                اساتید
+                            </a> 
+                        </span>
+                    </div>
+
+                </div>
+                <div class="d-flex my-2 baccolorequa p-2">
+                    <img src="https://mrjavadseydi.poshtiban.io/p/admin/shayan/birjand-lms/image/Mask Group 7.png" alt="" class="border-left p-2 m-auto">
+                    <div class="d-flex flex-column  w-100 p-2">
+                        <span class=" text-justify">
+                            آیا قبل طرح سوالتان ویدئوهای آموزشی مربوط به اساتید و دانشجویان را دیده اید؟
+
+                        </span>
+                        <span>
+                            مشاهده ویدئوهای آموزشی <a href="">
+                                دانشجویان
+                            </a> و <a href="">
+                                اساتید
+                            </a> 
+                        </span>
+                    </div>
+
+                </div>
+                <div class="d-flex my-2 baccolorequa p-2">
+                    <img src="https://mrjavadseydi.poshtiban.io/p/admin/shayan/birjand-lms/image/_x30_6_chat_bubble.png" alt="" class=" border-left p-2 m-auto">
+                    <div class="d-flex flex-column  w-100 p-2">
+                        <span class=" text-justify">
+                            آیا قبل طرح سوالتان ویدئوهای آموزشی مربوط به اساتید و دانشجویان را دیده اید؟
+
+                        </span>
+                        <span>
+                            مشاهده ویدئوهای آموزشی <a href="">
+                                دانشجویان
+                            </a> و <a href="">
+                                اساتید
+                            </a> 
+                        </span>
+                    </div>
+
+                </div>
+                <div class=" my-2  baccolorequa p-2">
+                    <div class="d-flex">
+                        <img src="https://mrjavadseydi.poshtiban.io/p/admin/shayan/birjand-lms/image/Mask Group 3.png" alt="" class=" border-left p-2 m-auto">
+                        <div class="d-flex flex-column  w-100 p-2">
+                            <span class=" text-justify">
+                            آیا قبل طرح سوالتان ویدئوهای آموزشی مربوط به اساتید و دانشجویان را دیده اید؟
+
+                        </span>
+                            <span>
+                            مشاهده ویدئوهای آموزشی <a href="">
+                                دانشجویان
+                            </a> و <a href="">
+                                اساتید
+                            </a> 
+                        </span>
+                        </div>
+                    </div>
+                    <div class=" m-2 p-2 bg-white d-flex align-items-center">
+                        <p class=" ml-auto my-auto p-2"><i class="far fa-check-circle text-success"></i>مرکز آموزش های آزاد (پاسخگویی از ۷:۳۰ الی ۱۴:۳۰)) </p>
+                    </div>
+                    <div class=" m-2 mb-4 p-2 bg-white">
+                        <p class="my-auto p-2">مرکز آموزش های آزاد (پاسخگویی از ۷:۳۰ الی ۱۴:۳۰)) </p>
+                    </div>
+
+                </div>
+                <div class="baccolorequa my-2 p-2">
+                    <p class=" text-justify p-2 pt-4">در خصوص موارد آموزشی اعم از مسائل مربوط به انتخاب واحد، حذف و اضافه مشکلات درسی ، تغییر رمز ورود سامانه آموزشی و ... با کارشناس گروه آموزشی خود که در جدول ذیل اسامی ایشان ذکر شده است تماس فرمایید. </p>
+                    <div class=" bg-white m-2 p-4">
+
+                        <table class=" w-100 tabelguide">
+                            <tr class=" border-bottom">
+                                <th>نام و نام خانوادگی</th>
+                                <th>گروه آموزشی</th>
+                                <th>شماره تماس</th>
+                            </tr>
+                            <tr>
+                                <td>علی عزیزی</td>
+                                <td>صنایع و علوم مهندسی</td>
+                                <td>05647563478</td>
+                            </tr>
+                            <tr>
+                                <td>علی عزیزی</td>
+                                <td>صنایع و علوم مهندسی</td>
+                                <td>05647563478</td>
+                            </tr>
+                            <tr>
+                                <td>علی عزیزی</td>
+                                <td>صنایع و علوم مهندسی</td>
+                                <td>05647563478</td>
+                            </tr>
+                            <tr>
+                                <td>علی عزیزی</td>
+                                <td>صنایع و علوم مهندسی</td>
+                                <td>05647563478</td>
+                            </tr>
+                            <tr>
+                                <td>علی عزیزی</td>
+                                <td>صنایع و علوم مهندسی</td>
+                                <td>05647563478</td>
+                            </tr>
+                            <tr>
+                                <td>علی عزیزی</td>
+                                <td>صنایع و علوم مهندسی</td>
+                                <td>05647563478</td>
+                            </tr>
+                            <tr>
+                                <td>علی عزیزی</td>
+                                <td>صنایع و علوم مهندسی</td>
+                                <td>05647563478</td>
+                            </tr>
+
+                        </table>
+
+
+                    </div>
+                </div>
+                <div class="">
+                    <div class="row justify-content-center d-flex flex-column">
+                        <p class=" m-auto py-3">لطفا در کانال های اطلاع رسانی دانشگاه بیرجند عضو شوید و از اخرین اطلاعیه های دانشگاه باخبر شوید </p>
+                        <button class="btn btn-outline-primary  m-auto">
+                    
+                           universityof_birjand@
+
+                    
+                   </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- footer -->
+        <footer>
+            <div class=" " id="nnnn">
+                <div class="row"></div>
+            </div>
+            <div class="all-footer overflow-hidden">
+                <div class="bg-light llll">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-5 d-none d-md-inline">
+                                <p><i class="fas fa-square iconshadow"></i>اعلانات </p>
+                                <span class=""> 
+                                     دانشگاه بیرجند در راستای ورود به فضاهای نوین یاددهی- یادگیری و بهره گیری از فناوری اطلاعات و ارتباطات در نظام آموزشی خود اقدام به راه اندازی سامانه آموزش الکترونیکی کرده است. در این سامانه علاوه بر اینکه برخی از دروس به روش کاملا الکترونیکی ارائه می شوند؛ اساتید دانشگاه می توانند از قابلیت های این نوع آموزش در کنار آموزش حضوری استفاده نمایند. این سامانه در خدمت دانشکده های مختلف برای ارائه دروس و یا کنفرانس های کامپیوتری تخصصی می باشد.
+                                </span>
+                            </div>
+                            <div class="col-6 col-md-3 px-2 px-md-0">
+                                <p><i class="fas fa-square iconshadow"></i>اعلانات </p>
+                                <ul class="listFooter list-unstyled">
+                                    <li class=" ">
+                                        <a href="">
+                                            صفحه اصلی
+    
+                                        </a>
+                                    </li>
+                                    <li class="">
+                                        <a href="">
+                                            راهنمای سامانه
+    
+                                        </a>
+                                    </li>
+                                    <li class="">
+                                        <a href="">
+                                            نرم افزار های مورد نیاز
+    
+                                        </a>
+                                    </li>
+                                    <li class="">
+                                        <a href="">
+                                            سوالات متداول
+    
+                                        </a>
+                                    </li>
+                                    <li class="">
+                                        <a href="">
+                                            دوره های آموزشی
+    
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-6 col-md-4">
+                                <p><i class="fas fa-square iconshadow"></i>راه های تماس با سامانه </p>
+
+                                <ul class=" list-unstyled">
+                                    <li>
+                                        <span>
+                                            09160186390
+                                        </span><span>
+                                            09160186390
+                                        </span><span>
+                                            09160186390
+                                        </span>
+                                    </li>
+                                    <li>
+                                        ایمیل: elearning@birjand.ac.ir
+                                    </li>
+                                    <li>
+                                        دورنما <span> 3742544656234</span>
+                                    </li>
+                                    <li>
+                                        ساعات پاسخگویی: 7صبح الی 8 شب
+
+                                    </li>
+                                    <li class=" text-left mt-4">
+                                        <button class="btn btn-outline-success m-1">Android <i class="fab fa-android"></i></button>
+                                        <button class="btn btn-outline-dark m-1">App ios <i class="fab fa-apple"></i></button>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright text-right ">
+                <div class=" container ">
+                    <div class="row d-flex align-items-center">
+                        <div class="col d-flex align-items-center">
+                            <a href="" class=" text-white my-3 ">کلیه حقوق سایت متعلق مربوط به دانشگاه بیرجند می باشد   </a>
+
+                        </div>
+                        <div class="col text-left ">
+                            <a href="https://www.daneshjooyar.com/" class=" text-white my-3 ">طراحی شده توسط دانشجویار</a>
+
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+            </div>
+        </footer>
+
+    </div>
+</body>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="https://mrjavadseydi.poshtiban.io/p/admin/shayan/birjand-lms/js/custom.js"></script>
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        slidesPerView: 7,
+        spaceBetween: 30,
+
+        loop: true,
+        loopFillGroupWithBlank: true,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        breakpoints: {
+            320: {
+                slidesPerView: 3,
+                spaceBetween: 30,
+            },
+            480: {
+                slidesPerView: 4,
+                spaceBetween: 30,
+            },
+            640: {
+                slidesPerView: 5,
+                spaceBetween: 30,
+            },
+            800: {
+                slidesPerView: 7,
+                spaceBetween: 30,
+            },
+
+        }
+    });
+</script>
+
+</html>
